@@ -1,0 +1,153 @@
+:root{
+    --main-color: rgb(93, 93, 239);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.game{
+    background-color: skyblue;
+}
+.container{
+    margin: 30px auto;
+    max-width: 80%;
+    min-height: 100%;
+}
+.name{
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--main-color);
+    text-align: center;
+}
+.message{
+    padding: 20px;
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.message span{
+    font-weight: bold;
+    color: #74a5a0;
+}
+.message span::before{
+    content: '[ ';
+}
+.message span::after{
+    content: ' ] ';
+}
+
+.start{
+    padding: 15px;
+    text-align: center;
+    background-color:rgb(23, 127, 127);
+    color: #fff;
+    margin: 10px 0px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.start:hover{
+transform: scale(1.1);
+}
+.the-word{
+    text-align: center;
+    font-size: 60px;
+    color: var(--main-color);
+    font-weight: bold;
+    user-select: none;
+}
+.input{
+ width:100%;
+ display: block;
+ margin: 5px 0;
+ font-size: 20px;
+ text-transform: capitalize;
+ padding: 12px;
+ border: 3px solid var(--main-color);
+ text-align: center;
+}
+.input:focus{
+    outline: none;
+}
+.upcoming-word{
+    /* width: 100%; */
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    margin: 15px 0px;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+.upcoming-word div{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    background-color: var(--main-color);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+.control{
+    display: flex;
+    background: #74a5a0;
+    padding: 10px;
+    justify-content: space-between;
+}
+.control span{
+    font-weight: bold;
+    color: green;
+}
+.finish{
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    /* display: inline-block; */
+    /* margin: 15px 0px; */
+}
+
+.finish .good{
+    color: var(--main-color);
+    background-color: skyblue;
+}
+.finish .bad{
+    color: red;
+}
+.cont{
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #74a5a0;
+    display: flex;
+    flex-direction: column;
+}
+.cont h3{
+    font-size: 20px;
+}
+.cont .btns button{
+    margin-top: 20px;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.cont .btns button:hover{
+color:tomato;
+background-color: aliceblue;
+transform: scale(1.1);
+}
